@@ -14,6 +14,7 @@ mkdir -p $1 $2 $3
 build_path=$(cd $1/api && pwd)
 cache_path=$(cd $2 && pwd)
 env_path=$(cd $3 && pwd)
+cd $build_path
 
 
 source ${build_pack_path}/lib/path_funcs.sh
